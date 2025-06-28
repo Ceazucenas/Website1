@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - ABCDE Massage Spa</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="scheduler.html">SCHEDULE NOW</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a class="phone">(816) 000-123456</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shop-section">
+            <h2>Shop Our Wellness Essentials</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="products/oil.jpg" alt="Massage Oil">
+                    <h3>Relaxing Massage Oil</h3>
+                    <p>Soothing lavender blend for ultimate relaxation.</p>
+                    <p class="price">Php 299</p>
+                    <button class="book-now-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="products/tea.jpg" alt="Herbal Tea">
+                    <h3>Herbal Detox Tea</h3>
+                    <p>All-natural ingredients to calm and cleanse.</p>
+                    <p class="price">Php 199</p>
+                    <button class="book-now-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="products/balm.jpg" alt="Herbal Balm">
+                    <h3>Soothing Herbal Balm</h3>
+                    <p>For muscle relief and stress release.</p>
+                    <p class="price">Php 249</p>
+                    <button class="book-now-btn">Add to Cart</button>
+                </div>
+
+                <!-- Add more product cards as needed -->
+            </div>
+        </section>
+    </main>
+    <script>
+        const links = document.querySelectorAll('.nav-links a');
+        const currentPage = window.location.pathname.split('/').pop();
+
+        links.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

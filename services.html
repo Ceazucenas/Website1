@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Massage Services</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="scheduler.html">SCHEDULE NOW</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a class="phone">(816) 000-123456</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="services-content">
+    <div class="services-grid">
+      <div class="thumbnails-wrapper">
+        <div class="thumb-box thumb1">
+          <img src="services pic\package1.png" alt="package 1">
+          <div class="caption">
+            <h4>Basic Massage</h4>
+            <p>A rejuvenating experience that revitalizes your body and mind.</p>
+            <p class="price">Price: Php350</p>
+            <button class="book-now-btn">Book Now</button>
+          </div>
+        </div>
+
+        <div class="thumb-box thumb2">
+          <img src="services pic\package2.png" alt="package 2">
+          <div class="caption">
+            <h4>Aromatherapy Massage</h4>
+            <p>A rejuvenating experience that revitalizes your body and mind.</p>
+            <p class="price">Price: Php450</p>
+            <button class="book-now-btn">Book Now</button>
+          </div>
+        </div>
+
+        <div class="thumb-box thumb3">
+          <img src="services pic\package3.png" alt="package 3">
+          <div class="caption">
+            <h4>Hot Stone Massage</h4>
+            <p>A rejuvenating experience that revitalizes your body and mind.</p>
+            <p class="price">Price: Php500</p>
+            <button class="book-now-btn">Book Now</button>
+          </div>
+        </div>
+
+        <div class="thumb-box thumb4">
+          <img src="services pic\package4.jpg" alt="package 4">
+          <div class="caption">
+            <h4>Intensive Japanese Hilot Combo</h4>
+            <p>A rejuvenating experience that revitalizes your body and mind.</p>
+            <p class="price">Price: Php550</p>
+            <button class="book-now-btn">Book Now</button>
+          </div>
+        </div>
+
+        <div class="thumb-box thumb5">
+          <img src="services pic\package5.jpg" alt="package 5">
+          <div class="caption">
+            <h4>Japanese Press Hilot Massage</h4>
+            <p>A rejuvenating experience that revitalizes your body and mind.</p>
+            <p class="price">Price: Php550</p>
+            <button class="book-now-btn">Book Now</button>
+          </div>
+        </div>
+
+        <div class="thumb-box thumb6">
+          <img src="services pic\package6.jpg" alt="package 6">
+          <div class="caption">
+            <h4>Aromatherapy with Hot Stone Massage</h4>
+            <p>A rejuvenating experience that revitalizes your body and mind.</p>
+            <p class="price">Price: Php550</p>
+            <button class="book-now-btn">Book Now</button>
+          </div>
+        </div>
+
+      </div>
+  </main>
+  <script>
+    const links = document.querySelectorAll('.nav-links a');
+    const currentPage = window.location.pathname.split('/').pop();
+
+    links.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+</body>
+
+</html>

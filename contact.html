@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - ABCDE Massage Spa</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="scheduler.html">SCHEDULE NOW</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a class="phone">(816) 000-123456</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+
+            <div class="contact-details">
+                <p><strong>Address:</strong> 123 Wellness St., Spa City, PH</p>
+                <p><strong>Phone:</strong> (816) 000-123456</p>
+                <p><strong>Email:</strong> abcdemassage@gmail.com</p>
+                <p><strong>Hours:</strong> Mon-Sun: 9AM – 9PM</p>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <input type="text" name="subject" placeholder="Subject" />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <script>
+        const links = document.querySelectorAll('.nav-links a');
+        const currentPage = window.location.pathname.split('/').pop();
+
+        links.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
